@@ -1,0 +1,10 @@
+-- Tietokantojen perusteet - Database basics
+-- H1 T11
+-- samu.kaarlela@tuni.fi
+
+a. True
+b. False
+c. Unknown
+d. Unknown
+e. True
+f. False
