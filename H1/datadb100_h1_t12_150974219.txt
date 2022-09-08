@@ -18,11 +18,21 @@ id          name                        category    price
 WHERE price <> 6.75
 id          name                        category    price
 ----------  --------------------------  ----------  ----------
-8           Pale Flamingo                           6.75
+1           Scottish Breakfast Premium  black       6.5
+2           Lovely Lemon                black       4.7
+3           Sources of Wisdom           green       5.8
+4           One True Love               green       6.2
+5           Little Sour Face            white       6.9
+6           Yellow Dragon               yellow      6.2
 
 
 SELECT name
 name                        
---------------
-Pale Flamingo               
+-------------------------- 
+Scottish Breakfast Premium  
+Lovely Lemon                
+Sources of Wisdom           
+One True Love               
+Little Sour Face            
+Yellow Dragon                    
 

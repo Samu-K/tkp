@@ -7,7 +7,7 @@ CREATE TABLE shoe (
     id int NOT NULL,
     name VARCHAR NOT NULL,
     type VARCHAR,
-    price int,
+    price DECIMAL,
     PRIMARY KEY (id),
     UNIQUE (name)
 );
