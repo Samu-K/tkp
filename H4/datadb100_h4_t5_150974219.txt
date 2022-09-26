@@ -1,0 +1,12 @@
+-- Tietokantojen perusteet - Database basics
+-- H4 T5
+-- samu.kaarlela@tuni.fi
+
+a. true
+b. undefined
+c. true
+d. false
+e. true
+f. undefined
+g. undefined
+h. true
