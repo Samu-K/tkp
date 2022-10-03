@@ -1,0 +1,3 @@
+-- Tietokantojen perusteet - Database basics
+-- H6 T7
+-- samu.kaarlela@tuni.fi
