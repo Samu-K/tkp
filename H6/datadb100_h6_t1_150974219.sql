@@ -2,7 +2,9 @@
 -- H6 T1
 -- samu.kaarlela@tuni.fi
 
-SELECT *
-FROM artwork
-LEFT JOIN displayed_at
-ON artwork.artwork_id = displayed_at.artwork_id;
+SELECT DISTINCT displayed_at.artwork_id, artwork_name
+FROM displayed_at
+LEFT JOIN artwork
+ON displayed_at.artwork_id = artwork.artwork_id;
+
+
