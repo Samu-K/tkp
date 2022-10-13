@@ -1,0 +1,13 @@
+-- create users
+
+INSERT INTO users 
+VALUES (6121694297,'Anni N',1985);
+
+INSERT INTO users
+VALUES (0505068314 ,'Juuso K', 1990);
+
+INSERT INTO users
+VALUES (9062130579 ,'Eino U',1940);
+
+INSERT INTO users
+VALUES (7051073112, 'Aila J', 1953);
