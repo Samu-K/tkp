@@ -34,7 +34,7 @@ CREATE TABLE category (
 CREATE TABLE user (
     u_id INT NOT NULL,
     uname VARCHAR(200),
-    birthyear DATE,
+    byear DATE,
     PRIMARY KEY (u_id)
 );
 
