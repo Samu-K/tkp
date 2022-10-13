@@ -1,0 +1,3 @@
+-- Tietokantojen perusteet - Database basics
+-- Harkka T2
+-- samu.kaarlela@tuni.fi

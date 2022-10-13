@@ -4,7 +4,7 @@ import os
 
 info = dict()
 
-with open("scripts/info.txt","r") as f:
+with open("D:/Coding/tkp/scripts/info.txt","r") as f:
     for l in f:
         spl = l.strip().split(":")
         info[str(spl[0])] = str(spl[1])

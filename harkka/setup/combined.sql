@@ -1,52 +1,52 @@
 -- create tables
 
 CREATE TABLE brand (
-    brand_id INT NOT NULL,
-    brand_name VARCHAR(200),
+    b_id INT NOT NULL,
+    bname VARCHAR(200),
     country VARCHAR(200),
-    PRIMARY KEY (brand_id)
+    PRIMARY KEY (b_id)
 );
 
 CREATE TABLE product (
-    product_id INT NOT NULL,
-    product_name VARCHAR(200),
-    descr VARCHAR(200),
+    p_id INT NOT NULL,
+    pname VARCHAR(200),
+    description VARCHAR(200),
     price FLOAT,
-    brand_id INT NOT NULL,
-    PRIMARY KEY (product_id),
-    FOREIGN KEY (brand_id) REFERENCES brand (brand_id)
+    b_id INT NOT NULL,
+    PRIMARY KEY (p_id),
+    FOREIGN KEY (b_id) REFERENCES brand (b_id)
 ); 
 
 CREATE TABLE falls_into (
-    product_id INT NOT NULL,
-    category_id INT NOT NULL,
-    FOREIGN KEY (product_id) REFERENCES product (product_id),
-    FOREIGN KEY (category_id) REFERENCES category (category_id),
-    PRIMARY KEY (product_id, category_id)
+    p_id INT NOT NULL,
+    c_id INT NOT NULL,
+    FOREIGN KEY (p_id) REFERENCES product (p_id),
+    FOREIGN KEY (c_id) REFERENCES category (c_id),
+    PRIMARY KEY (p_id, c_id)
 );
 
 CREATE TABLE category (
-    category_id INT NOT NULL,
-    category_name VARCHAR(200),
-    PRIMARY KEY (category_id)
+    c_id INT NOT NULL,
+    cname VARCHAR(200),
+    PRIMARY KEY (c_id)
 );
 
-CREATE TABLE users (
-    user_id INT NOT NULL,
-    username VARCHAR(200),
+CREATE TABLE user (
+    u_id INT NOT NULL,
+    uname VARCHAR(200),
     birthyear DATE,
-    PRIMARY KEY (user_id)
+    PRIMARY KEY (u_id)
 );
 
 CREATE TABLE evaluation (
-    user_id INT NOT NULL,
-    product_id INT NOT NULL,
-    eval_date DATE,
+    u_id INT NOT NULL,
+    p_id INT NOT NULL,
+    edate DATE,
     rating INT,
     review VARCHAR(2500),
-    PRIMARY KEY (user_id,product_id, eval_date),
-    FOREIGN KEY (user_id) REFERENCES users (user_id),
-    FOREIGN KEY (product_id) REFERENCES product (product_id)
+    PRIMARY KEY (u_id,p_id, edate),
+    FOREIGN KEY (u_id) REFERENCES user (u_id),
+    FOREIGN KEY (p_id) REFERENCES product (p_id)
 );
 
 -- categories
@@ -107,18 +107,18 @@ VALUES (3483988794 ,1362326543);
 INSERT INTO falls_into
 VALUES (3483988794 ,9604209179);
 
--- create users
+-- create user
 
-INSERT INTO users 
+INSERT INTO user 
 VALUES (6121694297,'Anni N',1985);
 
-INSERT INTO users
+INSERT INTO user
 VALUES (0505068314 ,'Juuso K', 1990);
 
-INSERT INTO users
+INSERT INTO user
 VALUES (9062130579 ,'Eino U',1940);
 
-INSERT INTO users
+INSERT INTO user
 VALUES (7051073112, 'Aila J', 1953);
 
 -- create reviews
